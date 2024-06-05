@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>All Articles</h1>
+
+	<div>
+		<% articles.forEach(element => { %>
+			<div style="background-color: #CCC; padding: 10px; margin: 5px;">
+				<h4><%= element.title %></h4> 
+				<p><%= element.body %></p>
+				<p>Likes: <%= element.number_of_likes %></p>
+			</div>
+		<% }) %>
+	</div>
+	
+</body>
+</html>
